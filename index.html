@@ -33,7 +33,8 @@
         <li><noindex><a href="https://www.kubsu.ru/ru/abiturient">запрещенная ссылка для индексации поисковиками</a></noindex></li><!--12-->
         <li><p><a href="http://pogoda.com/">контекстная ссылка в тексте абзаца</a>;</p></li><!--13-->
         <li><a href="sample.html"><img src="https://acegif.com/wp-content/uploads/gif-heart-29.gif" width="50" height="50" alt="Пример"></a></li><!--14-->
-        <li><!--15-->
+        <li>
+            <!--15-->
             ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
             <p>
                 <img src="https://funart.pro/uploads/posts/2020-04/1587219146_7-p-foni-s-kotami-na-prirode-34.jpg" alt="picture" style="width: 400px" usemap="#figuri">
@@ -50,6 +51,86 @@
         <li>сокращенная на главную <a href="/about">О компании</a></li><!--20-->
         <li><a href="#pogoda">сокращенная ссылка</a> на внутреннюю.</li><!--21-->
     </ol>
+    <h1>Задание 1(форма). Тормина Елена 21/1</h1>
+
+    <form action="/"
+          method="POST">
+
+        <label>
+            <!--1-->
+            Имя:<br />
+            <input name="field-name-1"
+                   value=" " />
+        </label><br />
+
+        <label>
+            <!--2-->
+            Текстовое поле email:<br />
+            <input name="field-email"
+                   value="test@example.com"
+                   type="email" />
+        </label><br />
+
+        <label>
+            <!--3-->
+            Текстовое поле даты:<br />
+            <input name="field-date"
+                   value="2019-08-13"
+                   type="date" />
+        </label><br />
+
+        <label>
+            <!--7-->
+            Биография:<br />
+            <textarea name="field-name-2"></textarea>
+        </label><br />
+
+        <label>
+            <!--6-->
+            Сверхспособности:
+            <br />
+            <select name="field-name-4[]"
+                    multiple="multiple">
+                <option value="Значение1">бессмертие</option>
+                <option value="Значение2" selected="selected">прохождение сквозь стены</option>
+                <option value="Значение3" selected="selected">левитация</option>
+            </select>
+        </label><br />
+
+        Пол:<br /><!--4-->
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение1" />
+            Женский
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение2" />
+            Мужской
+        </label><br />
+
+        Количество конечностей:<br /><!--5-->
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение1" />
+            4
+        </label>
+        <label>
+            <input type="radio"
+                   name="radio-group-1" value="Значение2" />
+            6
+        </label><br />
+
+        Подпись:<br /><!--8-->
+        <label>
+            <input type="checkbox" checked="checked"
+                   name="check-1" />
+            С контактом ознакомлен(а)
+        </label><br />
+
+        <input type="submit" value="Отправить" /><!--9-->
+    </form>
+
 </body>
 
 </html>
