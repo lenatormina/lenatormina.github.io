@@ -15,11 +15,11 @@
     <ol>
         <li>абсолютная гиперссылка на главную страницу сайта <a href="http://example.com/">example.com</a></li><!--1-->
         <li>абсолютная на главную сайта <a href="https://example.com/">example.com</a> в протоколе https</li><!--2-->
-        <li>ссылка на <a href=""> файл</a> на сервере FTP без авторизации</li><!--3-->
+        <li>ссылка на <a href="ftp://example.com/papka.txt"> файл</a> на сервере FTP без авторизации</li><!--3-->
         <li>ссылка на <a href="ftp://user:pass123@tavalik.ru/Temp/file.txt"> файл</a> на сервере FTP с авторизацией</li><!--4-->
-        <li>ссылка на <a href="#parents">"родителям"</a> - фрагмент страницы сайта <a href="http://www.smeshariki.ru#parents">www.smeshariki.ru</a></li><!--5-->
+        <li>ссылка на фрагмент страницы <a href="http://www.example.com/file#about">некоторого сайта</a>;</li><!--5-->
         <li>ссылка на фрагмент <a href="#anchor">текущей страницы</a><a id="anchor"></a></li><!--6-->
-        <li>ссылка с двумя параметрами <a href="http://shpargalkablog.ru/2016/09/url-parameters-js.html?a&b">shpargalkalog.ru</a></li><!--7-->
+        <li>ссылка с двумя параметрами в URL <a href="http://shpargalkablog.ru/2016/09/url-parameters-js.html?a&b">shpargalkalog.ru</a></li><!--7-->
         <li>
             список ссылок основной навигации сайта с подписями title<!--8-->
             <ul>
@@ -28,9 +28,9 @@
                 <li><a href="https://www.gismeteo.ru/weather-krasnodar-5136/" title="Погода в Краснодаре сегодня">Погода в Краснодаре сегодня</a></li>
             </ul>
         <li>ссылка без href: <a>http://pogoda.com//</a>;</li><!--9-->
-        <li>ссылка с пустым href: <a href=" ">pogoda.com</a>;</li><!--10-->
-        <li><a href="https://example.com/" rel="nofollow">ссылка, по которой запрещен переход поисковикам</a></li><!--11-->
-        <li><noindex><a href="https://www.kubsu.ru/ru/abiturient">запрещенная ссылка для индексации поисковиками</a></noindex></li><!--12-->
+        <li>ссылка с пустым href: <a href="">pogoda.com</a>;</li><!--10-->
+        <li><a href="http://example.сom" rel="nofollow">ссылка</a>, по которой запрещен переход поисковикам;</li><!--11-->
+        <li>ссылка, индексирование которой нужно запретить: <noindex>http://kubsu.com/</noindex>;</li><!--12-->
         <li><p><a href="http://pogoda.com/">контекстная ссылка в тексте абзаца</a>;</p></li><!--13-->
         <li><a href="sample.html"><img src="https://acegif.com/wp-content/uploads/gif-heart-29.gif" width="50" height="50" alt="Пример"></a></li><!--14-->
         <li>
@@ -39,96 +39,97 @@
             <p>
                 <img src="https://funart.pro/uploads/posts/2020-04/1587219146_7-p-foni-s-kotami-na-prirode-34.jpg" alt="picture" style="width: 400px" usemap="#figuri">
                 <map name="figuri">
-                    <area shape="rect" coords="150,150,180,180" href="http://ololo.com/" alt="прямоугольник">
-                    <area shape="circle" coords="149,289,350" href="http://oololo.com/" alt="круг">
+                    <area shape="rect" coords="150,150,180,180" href="http://love.com/" alt="прямоугольник">
+                    <area shape="circle" coords="149,289,350" href="http://love.com/" alt="круг">
                 </map>
             </p>
         </li>
         <li><a href="pogoda">относительная ссылка</a> на страницу в текущем каталоге;</li><!--16-->
-        <li>относительная на страницу в каталоге about <a href="http://example.com/about">example.com</a></li><!--17-->
+        <li><a href="about/index.html">относительная ссылка</a> на страницу в каталоге about;</li><!--17-->
         <li>относительная на страницу в каталоге уровнем выше текущего <a href="../index.html">index.html</a></li><!--18-->
         <li>относительная на страницу в каталоге двумя уровнями выше <a href="../../index.html">index.html</a></li><!--19-->
-        <li>сокращенная на главную <a href="/about">О компании</a></li><!--20-->
+        <li><a href="/">сокращенная ссылка</a> на главную;</li><!--20-->
         <li><a href="#pogoda">сокращенная ссылка</a> на внутреннюю.</li><!--21-->
     </ol>
-    <h1>Задание 1(форма). Тормина Елена 21/1</h1>
+    <h2> Формы.</h2>
 
     <form action="/"
           method="POST">
 
         <label>
-            <!--1-->
             Имя:<br />
             <input name="field-name-1"
-                   value=" " />
+                   value="Тормина Елена" />
         </label><br />
 
         <label>
-            <!--2-->
-            Текстовое поле email:<br />
+            E-mail:<br />
             <input name="field-email"
-                   value="test@example.com"
+                   value="lena.tormina2001@mail.ru"
                    type="email" />
         </label><br />
 
         <label>
-            <!--3-->
-            Текстовое поле даты:<br />
+            Дата рождения:<br />
             <input name="field-date"
-                   value="2019-08-13"
+                   value="2001-12-24"
                    type="date" />
         </label><br />
 
+        Пол:<br />
         <label>
-            <!--7-->
-            Биография:<br />
-            <textarea name="field-name-2"></textarea>
+            <input type="radio"
+                   name="radio-group-1" value="Значение1" />
+            мужской
+        </label>
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-1" value="Значение2" />
+            женский
+        </label><br />
+
+        Количество конечностей:<br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение1" />
+            2
+        </label>
+        <label>
+            <input type="radio" checked="checked"
+                   name="radio-group-2" value="Значение2" />
+            4
+        </label><br />
+        <label>
+            <input type="radio"
+                   name="radio-group-2" value="Значение3" />
+            другое
         </label><br />
 
         <label>
-            <!--6-->
             Сверхспособности:
             <br />
-            <select name="field-name-4[]"
+            <select name="superpowers-4[]"
                     multiple="multiple">
-                <option value="Значение1">бессмертие</option>
-                <option value="Значение2" selected="selected">прохождение сквозь стены</option>
-                <option value="Значение3" selected="selected">левитация</option>
+                <option value="immortality">бессмертие</option>
+                <option value="passing_through_walls">прохождение сквозь стены</option>
+                <option value="levitation">левитация</option>
             </select>
         </label><br />
 
-        Пол:<br /><!--4-->
         <label>
-            <input type="radio" checked="checked"
-                   name="radio-group-1" value="Значение1" />
-            Женский
-        </label>
-        <label>
-            <input type="radio"
-                   name="radio-group-1" value="Значение2" />
-            Мужской
+            Биография:<br />
+            <textarea name="field-name-2">учусь создавать WEB страничку</textarea>
         </label><br />
 
-        Количество конечностей:<br /><!--5-->
-        <label>
-            <input type="radio" checked="checked"
-                   name="radio-group-1" value="Значение1" />
-            4
-        </label>
-        <label>
-            <input type="radio"
-                   name="radio-group-1" value="Значение2" />
-            6
-        </label><br />
-
-        Подпись:<br /><!--8-->
+        С контрактом ознакомлен(а)
+        <br />
         <label>
             <input type="checkbox" checked="checked"
                    name="check-1" />
-            С контактом ознакомлен(а)
+            да
         </label><br />
 
-        <input type="submit" value="Отправить" /><!--9-->
+        <input type="submit" value="Отправить" />
     </form>
 
 </body>
