@@ -1,79 +1,77 @@
-#header img { 
+#header img { /*ëîãèòèï*/
+    float: left;
     width: 140px;
     height: 100px;
-    float: left;
     margin-left: auto;
     margin-right: auto;
 }
 
-#header {
+#header { /*øàïêà*/
     max-width: 960px;
     margin: 0 auto;
-    background-color: #36aa2e;
+    background-color: #9f91f4;
+    padding: 10px;
     height: 130px;
+}
+
+#shapka {/*øàïêà íà íàçâàíèå*/
+    background-color: #c1b9f3;
     padding: 10px;
 }
 
-#cap {
-    background-color: #4bbc6e;
-    padding: 10px;
-}
-
-#my_menu {
+#menu {/*ññûëêè ìåíþ*/
     max-width: 960px;
+    background-color: #c1b9f3;
     margin: 10px;
     padding: 1px;
-    background-color: #4bbc6e80;
     margin-left: auto;
     margin-right: auto;
 }
 
-#hyper {
+#ssilki {/*ãèïåðññûëêè*/
     max-width: 960px;
+    background-color: #c1b9f3;
     margin: 0 auto;
     padding: 1px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4bbc6e80;
 }
 
-#table { 
-    text-align: center;
+#table {/*òàáëèöà*/
     width: 960px;
     margin: 10px;
     padding: 10px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
     border: 2px solid black;
     border-collapse: collapse;
 }
 
-#forma {
+#forma {/*ôîðìà*/
     max-width: 960px;
+    background-color: #c1b9f3;
     margin: 10px;
     padding: 1px;
-    background-color: #4bbc6e80;
     margin-left: auto;
     margin-right: auto;
 }
 
 
-#nech {
+#nechet {/*íå÷¸òíûå ÿ÷åéêè òàáëèöû*/
     border: 1px solid black;
-    background-color: #141ad8d1;
+    background-color: #c1b9f3c2;
 }
 
-#ch {
+#chet {/*÷¸òíûå ÿ÷åéêè òàáëèöû*/
     border: 1px solid black;
-    background-color: #01b9ffa8;
+    background-color: #a599ec;
 }
 
-#footer {
-    max-width: 960px;
-    margin: 0 auto;
+#footer {/*ïîäâàë*/
     width: 100%;
-    background-color: #36aa2e;
+    background-color: #9f91f4;
     padding: 10px;
     position: relative;
-    text-align: left;
+    text-align: right;
 }
