@@ -4,130 +4,101 @@
 
 <head>
     <title>Задание 2</title>
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <div id="header">
         <header>
-            <img src="https://citydog.by/content/_posts/442X361/5e2c4f627a5bc.jpeg" alt="логотип" />
-            <h1 id="shapka">
-                  Задание 2
+            <img src="https://citydog.by/content/_posts/442X361/5e2c4f627a5bc.jpeg" alt="Логотип" />
+            <h1 id="cap">
+                Задание 2
             </h1>
         </header>
     </div>
 
-    <div id="menu">
+    <div id="my_menu">
         <ul>
-            <li> <a href="#g">Список гиперссылок</a><a id="anchor"></a> </li>
-            <li> <a href="#t">Таблица</a><a id="anchor"></a> </li>
-            <li> <a href="#f">Форма</a><a id="anchor"></a> </li>
+            <li> <a href="#a">Гиперссылки</a><a id="anchor1"></a> </li>
+            <li> <a href="#b">Таблица</a><a id="anchor2"></a> </li>
+            <li> <a href="#c">Форма</a><a id="anchor3"></a> </li>
         </ul>
     </div>
-    <a id="g"></a>
-    <div id="ssilki">
+    <a id="a"></a>
+    <div id="hyper">
         <ol>
-            <!--1-->
-            <li>абсолютная гиперссылка на главную страницу сайта <a href="http://example.com/">example.com</a>;</li>
-            <!--2-->
-            <li>абсолютная гиперссылка на главную страницу сайта <a href="https://example.com/">example.com</a> в протоколе https;</li>
-            <!--3-->
-            <li>ссылка на <a href="ftp://example.com/file.txt">файл</a> на сервере FTP без авторизации;</li>
-            <!--4-->
-            <li>ссылка на  <a href="ftp://user:password@example.com/file.txt">файл</a> на сервере FTP с авторизацией;</li>
-            <!--5-->
-            <li>ссылка на фрагмент страницы <a href="http://www.example.com/page#about">некоторого сайта</a>;</li>
-            <!--6-->
-            <li>ссылка на фрагмент <a href="#anchor">текущей </a><a id="anchor">страницы</a>;</li>
-            <!--7-->
-            <li>ссылкa с двумя параметрами в URL <a href="http://example.com?a&b">example.com</a>;</li>
-            <!--8-->
+            <li><a href="http://example.com/">example.com</a> - абсолютная гиперссылка на главную страницу сайта</li>
+            <li><a href="https://example.com/">example.com</a> - абсолютная гиперссылка на главную страницу сайта в протоколе https</li>
+            <li>ссылка на <a href="ftp://example.com/my_file.txt">файл</a> на сервере FTP без авторизации</li>
+            <li>ссылка на <a href="ftp://user:password@example.com/my_file.txt">файл</a> на сервере FTP с авторизацией</li>
+            <li>ссылка на <a href="http://www.example.com/sheet#about">фрагмент страницы</a> некоторого сайта</li>
+            <li>ссылка на <a href="#anchor">фрагмент</a><a id="anchor"> текущей страницы</a></li>
+            <li><a href="http://example.com?x&y">example.com</a> - ссылкa с двумя параметрами в URL</li>
+            <li> <a href="https://example.com/help" title="помощь">список ссылок</a> основной навигации сайта с подписями title</li>
+            <li><a>http://example.com/</a> - ссылка без href</li>
+            <li><a href=" ">example.com</a> - ссылка с пустым href</li>
+            <li><a href="http://example.сom" rel="nofollow">ссылка</a>, по которой запрещен переход поисковикам</li>
+            <li> <noindex>http://example.com/</noindex> - ссылка, индексирование которой нужно запретить</li>
+            <li><p><a href="http://example.com/">контекстная ссылка</a> в тексте абзаца</p></li>
             <li>
-                список ссылок основной навигации сайта с подписями title:
-                <ul>
-                    <li> <a href="https://zoo.com/giraffes" title="подробнее о жирафах">жирафы</a> </li>
-                    <li> <a href="https://zoo.com/hippos" title="подробнее о бегемотах">бегемоты</a> </li>
-                    <li> <a href="https://zoo.com/lions" title="подробнее о львах">львы</a> </li>
-                </ul>
-
-            </li>
-            <!--9-->
-            <li>ссылка без href: <a>http://example.com/</a>;</li>
-            <!--10-->
-            <li>ссылка с пустым href: <a href="">example.com</a>;</li>
-            <!--11-->
-            <li><a href="http://example.сom" rel="nofollow">ссылка</a>, по которой запрещен переход поисковикам;</li>
-            <!--12-->
-            <li>ссылка, индексирование которой нужно запретить: <noindex>http://example.com/</noindex>;</li>
-            <!--13-->
-            <li><p><a href="http://example.com/">контекстная ссылка в тексте абзаца</a>;</p></li>
-            <!--14-->
-            <li>
-                ссылка-изображение:
+                ссылка-изображение
                 <p>
-                    <img src="https://acegif.com/wp-content/uploads/gif-heart-29.gif" alt="Сердце" style="width: 300px" ; />
+                    <img src="https://acegif.com/wp-content/uploads/gif-heart-29.gif" alt="Сердечко" style="width: 400px" ; />
                 </p>
             </li>
-            <!--15-->
             <li>
-                ссылки из прямоугольных и круглых областей картинки (HTML-тег map):
+                ссылки из прямоугольных и круглых областей картинки (HTML-тег map)
                 <p>
-                    <img src="https://get.pxhere.com/photo/animal-pet-kitten-cat-feline-mammal-fauna-close-up-nose-whiskers-snout-eye-skin-vertebrate-organ-macro-photography-tabby-cat-animal-photography-small-to-medium-sized-cats-cat-like-mammal-carnivoran-995852.jpg" alt="tehc" style="width: 300px" usemap="#figuri">
+                    <img src="https://get.pxhere.com/photo/animal-pet-kitten-cat-feline-mammal-fauna-close-up-nose-whiskers-snout-eye-skin-vertebrate-organ-macro-photography-tabby-cat-animal-photography-small-to-medium-sized-cats-cat-like-mammal-carnivoran-995852.jpg" alt="diffuri" style="width: 400px" usemap="#figuri">
                     <map name="figuri">
-                        <area shape="rect" coords="50,50,100,100" href="http://example.com/" alt="прямоугольник">
-                        <area shape="circle" coords="150,15,70" href="http://example.com/" alt="круг">
+                        <area shape="rect" coords="70,70,120,120" href="http://example.com/" alt="прямоугольник">
+                        <area shape="circle" coords="210,38,111" href="http://example.com/" alt="круг">
                     </map>
                 </p>
             </li>
-            <!--16-->
-            <li><a href="about">относительная ссылка</a> на страницу в текущем каталоге;</li>
-            <!--17-->
-            <li><a href="about/index.html">относительная ссылка</a> на страницу в каталоге about;</li>
-            <!--18-->
-            <li><a href="../index.html">относительная ссылка</a> на страницу в каталоге уровнем выше текущего;</li>
-            <!--19-->
-            <li><a href="../../index.html">относительная ссылка</a> на страницу в каталоге двумя уровнями выше;</li>
-            <!--20-->
-            <li><a href="/">сокращенная ссылка</a> на главную;</li>
-            <!--21-->
-            <li><a href="#my_life">сокращенная ссылка</a> на внутреннюю.</li>
+            <li>относительная <a href="pogoda">ссылка</a> на страницу в текущем каталоге</li>
+            <li>относительная <a href="about/hello.html">ссылка</a> на страницу в каталоге about</li>
+            <li>относительная <a href="../pogoda.html">ссылка</a> на страницу в каталоге уровнем выше текущего</li>
+            <li>относительная <a href="../../pogoda.html">ссылка</a> на страницу в каталоге двумя уровнями выше</li>
+            <li>сокращенная <a href="/">ссылка</a> на главную</li>
+            <li>сокращенная <a href="#example">ссылка</a> на внутреннюю</li>
         </ol>
     </div>
-    <a id="t"></a> <!--таблица-->
+    <a id="b"></a>
     <table id="table">
         <tr>
-            <th id="nechet" colspan="3">колонка 1 и колонка 2 и колонка 3</th>
+            <th id="nech">Колонка 1</th>
+            <th id="nech">Колонка 2</th>
+            <th id="nech">Колонка 3</th>
         </tr>
         <tr>
-            <td id="chet" colspan="2">Ячейка 11 объединенная с 12</td>
-            <td id="chet">Ячейка 13</td>
+            <td id="ch">Ячейка 11</td>
+            <td id="ch" colspan="2">Ячейка 12 объединенная с 13</td>
         </tr>
         <tr>
-            <td id="nechet">Ячейка 21</td>
-            <td id="nechet" colspan="2">Ячейка 22 объединенная с 23</td>
+            <td id="nech">Ячейка 21</td>
+            <td id="nech" colspan="2">Ячейка 22 объединенная с 23</td>
         </tr>
         <tr>
-            <td id="chet">Ячейка 31</td>
-            <td id="chet">Ячейка 32</td>
-            <td id="chet">Ячейка 33</td>
+            <td id="ch">Ячейка 31</td>
+            <td id="ch">Ячейка 32</td>
+            <td id="ch">Ячейка 33</td>
         </tr>
         <tr>
-            <td id="nechet" colspan="2">Ячейка 41 объединенная с 42</td>
-            <td id="nechet">Ячейка 43</td>
+            <td id="nech" colspan="2">Ячейка 41 объединенная с 42</td>
+            <td id="nech">Ячейка 43</td>
         </tr>
         <tr>
-            <td id="chet">Ячейка 51</td>
-            <td id="chet">Ячейка 52</td>
-            <td id="chet">Ячейка 53</td>
+            <td id="ch">Ячейка 51</td>
+            <td id="ch" colspan="2">Ячейка 52 объединенная с 53</td>
         </tr>
         <tr>
-            <td id="nechet">Ячейка 61</td>
-            <td id="nechet">Ячейка 62</td>
-            <td id="nechet">Ячейка 63</td>
+            <td id="nech" colspan="2">Ячейка 61 объединенная с 62</td>
+            <td id="nech">Ячейка 63</td>
         </tr>
     </table>
 
-    <a id="f"></a><!--форма-->
+    <a id="c"></a>
     <div id="forma">
         <form action="/"
               method="POST">
@@ -135,7 +106,7 @@
             <label>
                 Имя:<br />
                 <input name="field-name-1"
-                       value="Елена" />
+                       value="Тормина Елена" />
             </label><br />
 
             <label>
@@ -154,12 +125,12 @@
 
             Пол:<br />
             <label>
-                <input type="radio"
+                <input type="radio" checked="checked"
                        name="radio-group-1" value="Значение1" />
                 мужской
             </label>
             <label>
-                <input type="radio" checked="checked"
+                <input type="radio"
                        name="radio-group-1" value="Значение2" />
                 женский
             </label><br />
@@ -171,46 +142,46 @@
                 2
             </label>
             <label>
-                <input type="radio" checked="checked"
+                <input type="radio"
                        name="radio-group-2" value="Значение2" />
                 4
             </label><br />
             <label>
-                <input type="radio"
-                       name="radio-group-2" value="Значение3" />
-                другое
+                <input type="radio" checked="checked"
+                       name="radio-group-2" value="Значение2" />
+                3
             </label><br />
 
             <label>
                 Сверхспособности:
                 <br />
-                <select name="superpowers-4[]"
+                <select name="super-4[]"
                         multiple="multiple">
                     <option value="immortality">бессмертие</option>
-                    <option value="passing_through_walls">прохождение сквозь стены</option>
                     <option value="levitation">левитация</option>
+                    <option value="passing_through_walls">прохождение сквозь стены</option>
                 </select>
             </label><br />
 
             <label>
                 Биография:<br />
-                <textarea name="field-name-2">студентка ФКТиПМ!!!</textarea>
+                <textarea name="field-name-2"></textarea>
             </label><br />
 
-            С контрактом ознакомлен(а)
+            С контрактом ознакомлен(а):
             <br />
             <label>
                 <input type="checkbox" checked="checked"
                        name="check-1" />
-                да
+                Подтвердить
             </label><br />
 
             <input type="submit" value="Отправить" />
         </form>
     </div>
 
-    <div id="footer"> 
-        (c) Тормина Елена,21/2
+    <div id="footer">
+        (c)Тормина Елена,21/1 группа
     </div>
 
 </body>
